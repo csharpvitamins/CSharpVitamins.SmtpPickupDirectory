@@ -8,12 +8,12 @@ using System.Reflection;
 using System.Web;
 using System.Web.Configuration;
 
-namespace CSharpVitamins.SmtpPickupDirectory
+namespace CSharpVitamins
 {
 	/// <summary>
 	/// Exposes helper methods for dealing with system.net/mailSettings
 	/// </summary>
-	public static class MailSettings
+	public static class SmtpPickupDirectory
 	{
 		static bool? _isUsingPickupDirectory;
 

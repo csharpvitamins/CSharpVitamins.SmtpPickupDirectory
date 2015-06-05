@@ -7,7 +7,7 @@
     <ProjectGuid>{E691D15B-8702-4E57-92F9-427754E48C99}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpVitamins.SmtpPickupDirectory</RootNamespace>
+    <RootNamespace>CSharpVitamins</RootNamespace>
     <AssemblyName>CSharpVitamins.SmtpPickupDirectory</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -38,8 +38,8 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MailSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmtpPickupDirectory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
