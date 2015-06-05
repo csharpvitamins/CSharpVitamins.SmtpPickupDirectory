@@ -1,10 +1,13 @@
 # CSharpVitamins.SmtpPickupDirectory
 
-This library simply helps set your `System.Net.Mail.SmtpClient` drop folder location to a web relative location - which you can't do out of the box. This helps in multi machine/develop setups. 
+This library simply helps set your `System.Net.Mail.SmtpClient` drop folder to a web relative location - which you can't do out of the box. This helps in multi machine/developer setups. 
 
  1. See [Using an smtp pickup directory for ASP.NET development](http://singular.co.nz/2007/11/using-an-smtp-pickup-directory-delivery-method-for-asp-net-development/) for reasons why using a **drop folder** in development is a good idea.
  2. And the follow up [Programmatically setting the SmtpClient pickup directory location at runtime](http://singular.co.nz/2007/12/programmatically-setting-the-smtpclient-pickup-directory-location-at-runtime/) for more reasoning on why this library came about.
 
+Available on [NuGet](https://www.nuget.org/packages/csharpvitamins.smtppickupdirectory/). To install, run the following command in the Package Manager Console:
+
+	PM> Install-Package CSharpVitamins.SmtpPickupDirectory
 
 
 ## Usage
@@ -20,7 +23,7 @@ Usage is fairly simple - you must set the `<smtp><deliveryMethod>` to "Specified
 	</system.net>
 
 Then in your application start up code, pass it a relative location. 
-
+ 
 	using CSharpVitamins;
 
 	void Application_Start()
